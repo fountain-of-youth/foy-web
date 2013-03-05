@@ -1,0 +1,7 @@
+<h1><%= @project.title %></h1>
+
+<p><b>Repository:</b> <%= @project.repository %></p>
+<p><b>Plataforma:</b> <%= @project.handler.title %></p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

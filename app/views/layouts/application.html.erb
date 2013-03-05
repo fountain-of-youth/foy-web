@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FoyWeb</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title>Fountain of Youth</title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <%= render 'shared/nav' %>
+  <div class="content">
+    <div class="main">
+      <%= render 'shared/flash_messages' %>
+      <%= yield %>
+    </div>
+  </div>
 </body>
 </html>
