@@ -7,9 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Handler.create  title:      "Ruby",
-                parse_cmd:  "foy_ruby_handler parse",
-                version_cmd:"foy_ruby_handler version"
+                parse_cmd:  "foy-ruby-handler parse",
+                version_cmd:"foy-ruby-handler version",
+                file:       "Gemfile.lock"
 
 Handler.create  title:      "Python",
                 parse_cmd:  "foy.python -R",
-                version_cmd:"foy.python -C"
+                version_cmd:"foy.python -C",
+                file:       "requirements.txt"
