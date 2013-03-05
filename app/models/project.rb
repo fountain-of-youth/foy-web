@@ -13,4 +13,10 @@ class Project
     end
   end
 
+  def outdated_packages
+    self.project_packages.select do |package|
+      not package.updated?
+    end
+  end
+
 end

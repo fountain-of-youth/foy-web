@@ -3,5 +3,12 @@
 <p><b>Repository:</b> <%= @project.repository %></p>
 <p><b>Plataforma:</b> <%= @project.handler.title %></p>
 
+<ul>
+  <% @project.outdated_packages.each do |project_package| %>
+    <li><%= project_package.package.title %>
+    <%= project_package.version %> =&gt; <%= project_package.package.version %></li>
+  <% end %>
+</ul>
+
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
