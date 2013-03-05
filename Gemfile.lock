@@ -55,7 +55,14 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.21)
+    mongoid (3.1.2)
+      activemodel (~> 3.2)
+      moped (~> 1.4.2)
+      origin (~> 1.0)
+      tzinfo (~> 0.3.22)
+    moped (1.4.3)
     multi_json (1.6.1)
+    origin (1.0.11)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -120,6 +127,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   foy_ruby_handler
   jquery-rails
+  mongoid
   rails (= 3.2.12)
   rspec-rails
   sass-rails (~> 3.2.3)
