@@ -9,7 +9,7 @@ module Foy
       `#{@handler.parse_cmd} #{file}`.strip
     end
 
-    def version(parse)
+    def version(package)
       `#{@handler.version_cmd} #{package}`.strip
     end
   end

@@ -5,5 +5,5 @@ class Handler
   field :version_cmd, type: String
   field :file, type: String
 
-  embeds_many :packages
+  has_many :packages
 end

@@ -16,11 +16,11 @@ module Foy
             project.project_packages.destroy
 
             response.each_line do |line|
-              name, version = line.split(" ")
-              package = handler.packages.find_or_create_by(name: name)
+              title, version = line.split(" ")
+              package = handler.packages.find_or_create_by(title: title)
               package.save
 
-              project_package = project.project_packages.find_or_create_by(name: name)
+              project_package = project.project_packages.find_or_create_by(package_id: package.id)
               project_package.version = version
               project_package.save
             end

@@ -3,5 +3,6 @@ class Package
   field :title, type: String
   field :version, type: String
 
-  embedded_in :handler
+  has_many :project_packages
+  belongs_to :handler
 end
