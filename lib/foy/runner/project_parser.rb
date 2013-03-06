@@ -24,6 +24,8 @@ module Foy
               project_package.version = version
               project_package.save
             end
+
+            git_fetcher.clean_up
           end
         end
       end
